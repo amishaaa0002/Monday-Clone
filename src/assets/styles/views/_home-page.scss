@@ -1,0 +1,78 @@
+.home-page {
+  background: white;
+  margin: 0;
+  padding-top: rem(72px);
+  color: $app-bg;
+  font-family: $title-font-family;
+
+  .home-content {
+    padding-top: $spacing-xxl;
+    @include center-flex();
+    flex-direction: column;
+    margin-bottom: $spacing-medium;
+
+    .home-paragraph {
+      color: $app-bg;
+      text-align: center;
+      font-size: rem(14px);
+      color: $workspace-icon-color;
+    }
+
+    .headers-container {
+      text-align: center;
+
+      .main-title {
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        background: black;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: $spacing-large;
+        font-size: 2.875rem;
+        margin-bottom: $spacing-medium;
+        line-height: 40px;
+        letter-spacing: 2px;
+
+        @include for-normal-layout() {
+          & {
+            font-size: rem(46px);
+            margin-bottom: $spacing-medium;
+            line-height: 65px;
+          }
+        }
+      }
+
+      .secondary-title {
+        font-weight: 300;
+        font-size: rem(16px);
+        letter-spacing: 1px;
+        color: black;
+        padding: 0 $spacing-large;
+
+        @include for-normal-layout() {
+          & {
+            font-size: rem(20px);
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    .get-started {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 32px 0;
+      max-width: 90%;
+    }
+  }
+
+  .hero {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
